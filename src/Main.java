@@ -5,10 +5,10 @@ public class Main {
     static Email email;
     public static void main(String[] args) {
          email = new Email();
-         changePassword();
          email.generateEmail();
+         email.printPassword();
+         changePassword();
          email.getInfo();
-
     }
     public static void changePassword() {
         System.out.println("would you like to change your password? [y/n]");
