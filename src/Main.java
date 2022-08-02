@@ -26,15 +26,13 @@ public class Main {
                     loop = true;
                 }
                 else {
-                    System.out.println("Huh!... enter a matching password");
+                    System.out.println("Huh!... Please enter a matching password");
                     loop = false;
                 }
             }
             while (!loop);
         }
-        else if (choice.equals("n") || choice.equals("N") || choice.equals("no") || choice.equals("NO")) {
+        else
             System.out.println(" ");
-        }
-
     }
 }

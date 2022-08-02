@@ -10,10 +10,11 @@ public class Email {
     Scanner in = new Scanner(System.in);
 
     public Email() {
-      this.firstname = firstname();
-      this.lastname = lastname();
-      this.department = setDepartment();
-      this.password = setPassword(10);
+        System.out.println("Welcome to Hyundai Consortium");
+        this.firstname = firstname();
+        this.lastname = lastname();
+        this.department = setDepartment();
+        this.password = setPassword(10);
     }
 
     public String firstname() {
@@ -102,8 +103,8 @@ public class Email {
 
     public void generateEmail() {
         String companyName = "hyundai.com";
-        System.out.println("Email: "+getFirstname() + "." +getLastname() + "." +getDepartment()
-        + "@" + companyName +"\n");
+        System.out.println("Email: "+getFirstname() + "." +getLastname() + "@" +getDepartment()
+        + "." + companyName +"\n");
     }
 
     public void printPassword() {
