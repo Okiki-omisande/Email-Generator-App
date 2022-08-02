@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner input = new Scanner(System.in);
     static Email email;
+
     public static void main(String[] args) {
         String choice;
         do {
@@ -11,6 +12,7 @@ public class Main {
         }
         while (choice.equals("1"));
     }
+
     public static void changePassword() {
         System.out.println("would you like to change your password? [y/n]");
         String choice = input.next();
