@@ -4,11 +4,12 @@ public class Main {
     static Scanner input = new Scanner(System.in);
     static Email email;
     public static void main(String[] args) {
-         email = new Email();
-         email.generateEmail();
-         email.printPassword();
-         changePassword();
-         email.getInfo();
+        String choice;
+        do {
+           generateEmail();
+           choice = prompt();
+        }
+        while (choice.equals("1"));
     }
     public static void changePassword() {
         System.out.println("would you like to change your password? [y/n]");
@@ -34,5 +35,21 @@ public class Main {
         }
         else
             System.out.println(" ");
+    }
+
+    public static void generateEmail() {
+        email = new Email();
+        email.generateEmail();
+        email.printPassword();
+        changePassword();
+        email.getInfo();
+    }
+
+    public static String prompt() {
+        System.out.println("Would you like to create more mails");
+        System.out.println("Enter");
+        System.out.println("1 -to generate mail");
+        System.out.println("2 -to exit");
+        return input.next();
     }
 }

@@ -10,7 +10,6 @@ public class Email {
     Scanner in = new Scanner(System.in);
 
     public Email() {
-        System.out.println("Welcome to Hyundai Consortium");
         this.firstname = firstname();
         this.lastname = lastname();
         this.department = setDepartment();
@@ -117,6 +116,6 @@ public class Email {
         System.out.println("last name: " +getLastname());
         System.out.println("department: " +getDepartment());
         System.out.println("password: " +getPassword());
-        System.out.println("mail capacity: " +getMailCapacity());
+        System.out.println("mail capacity: " +getMailCapacity() + "\n");
     }
 }
